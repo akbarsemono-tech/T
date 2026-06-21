@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>akbarsemono-tech/T - Repository</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .info-card {
+            background: #f6f8fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .info-card h3 {
+            color: #667eea;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .info-card p {
+            color: #24292e;
+            font-size: 1.1em;
+            word-break: break-all;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .stat-item {
+            background: #f6f8fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-item .number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-item .label {
+            color: #586069;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #24292e;
+            border-bottom: 2px solid #e1e4e8;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .features-list {
+            list-style: none;
+            display: grid;
+            gap: 10px;
+        }
+
+        .features-list li {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: #f6f8fa;
+            border-radius: 6px;
+        }
+
+        .features-list li:before {
+            content: "✓";
+            color: #28a745;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .features-list li.disabled:before {
+            content: "✗";
+            color: #cb2431;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #e1e4e8;
+            color: #24292e;
+        }
+
+        .btn-secondary:hover {
+            background: #d1d5da;
+        }
+
+        .footer {
+            background: #f6f8fa;
+            padding: 20px 30px;
+            border-top: 1px solid #e1e4e8;
+            text-align: center;
+            color: #586069;
+            font-size: 0.9em;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #e1e4e8;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+
+        .badge.public {
+            background: #dcffe4;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📦 akbarsemono-tech/T</h1>
+            <p>Repository Details & Information</p>
+        </div>
+
+        <div class="content">
+            <!-- Info Cards -->
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>👤 Owner</h3>
+                    <p>akbarsemono-tech</p>
+                </div>
+                <div class="info-card">
+                    <h3>🔗 Repository URL</h3>
+                    <p><a href="https://github.com/akbarsemono-tech/T" target="_blank">https://github.com/akbarsemono-tech/T</a></p>
+                </div>
+                <div class="info-card">
+                    <h3>📅 Created</h3>
+                    <p>2 minutes ago</p>
+                </div>
+                <div class="info-card">
+                    <h3>🔄 Last Updated</h3>
+                    <p>1 minute ago</p>
+                </div>
+                <div class="info-card">
+                    <h3>🌳 Default Branch</h3>
+                    <p>main</p>
+                </div>
+                <div class="info-card">
+                    <h3>🔐 Visibility</h3>
+                    <p><span class="badge public">PUBLIC</span></p>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="number">0</div>
+                    <div class="label">Stars</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">0</div>
+                    <div class="label">Forks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">0</div>
+                    <div class="label">Issues</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">0 KB</div>
+                    <div class="label">Size</div>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="section">
+                <h2>✨ Features</h2>
+                <ul class="features-list">
+                    <li>Issues enabled</li>
+                    <li>Pull requests enabled</li>
+                    <li>Discussions disabled</li>
+                    <li>Wiki enabled</li>
+                    <li>Projects enabled</li>
+                    <li>Downloads enabled</li>
+                    <li class="disabled">GitHub Pages disabled</li>
+                    <li>Forking allowed</li>
+                    <li>Merge commits allowed</li>
+                    <li>Rebase merge allowed</li>
+                    <li>Squash merge allowed</li>
+                </ul>
+            </div>
+
+            <!-- Merge Settings -->
+            <div class="section">
+                <h2>⚙️ Merge Settings</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Merge Commit Title</h3>
+                        <p>MERGE_MESSAGE</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Squash Merge Title</h3>
+                        <p>COMMIT_OR_PR_TITLE</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Auto Merge</h3>
+                        <p>Disabled</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Require Signoff</h3>
+                        <p>No</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="section">
+                <h2>🚀 Quick Actions</h2>
+                <div class="button-group">
+                    <a href="https://github.com/akbarsemono-tech/T" class="btn btn-primary" target="_blank">View on GitHub</a>
+                    <a href="https://github.com/akbarsemono-tech/T/issues" class="btn btn-secondary" target="_blank">Issues</a>
+                    <a href="https://github.com/akbarsemono-tech/T/pulls" class="btn btn-secondary" target="_blank">Pull Requests</a>
+                    <a href="https://github.com/akbarsemono-tech/T/wiki" class="btn btn-secondary" target="_blank">Wiki</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Generated on June 21, 2026 | Repository ID: 1275882008</p>
+        </div>
+    </div>
+</body>
+</html>
